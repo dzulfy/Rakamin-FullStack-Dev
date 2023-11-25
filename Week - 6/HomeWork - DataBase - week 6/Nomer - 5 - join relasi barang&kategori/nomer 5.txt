@@ -1,0 +1,5 @@
+-- query untuk melakukan join relasi antara barang dan kategori barang
+
+SELECT Barang.nama_barang, Barang.harga, KategoriBarang.nama_kategori
+FROM Barang
+INNER JOIN KategoriBarang ON Barang.id_kategori = KategoriBarang.id_kategori;

@@ -1,0 +1,13 @@
+-- query untuk melakuakn create table barang dan kategori barang
+
+CREATE TABLE KategoriBarang (
+	id_kategori INT PRIMARY KEY,
+	nama_kategori VARCHAR
+);
+
+CREATE TABLE Barang (
+	id_barang INT PRIMARY KEY,
+	nama_barang VARCHAR,
+	harga INT,
+	id_kategori INT REFERENCES KategoriBarang(id_kategori)
+);

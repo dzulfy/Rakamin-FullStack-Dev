@@ -1,0 +1,14 @@
+Table Barang {
+  id_barang int [pk]
+  nama_barang varchar
+  harga int
+  id_kategori int
+}
+
+Table KategoriBarang {
+  id_kategori int [pk]
+  nama_kategori varchar
+}
+
+
+Ref: "KategoriBarang"."id_kategori" < "Barang"."id_kategori"

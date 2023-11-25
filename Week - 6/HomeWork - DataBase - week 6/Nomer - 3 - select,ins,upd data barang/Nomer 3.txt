@@ -1,0 +1,22 @@
+-- query untuk melakukan select, update, insert data barang
+SELECT * FROM Barang;
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (1, 'Rubik 3x3', 50000, 1);
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (2, 'Playstation 5', 8000000, 2);
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (3, 'Monopoli', 20000, 3);
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (4, 'Puzzle gambar', 10000, 1);
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (5, 'Nitendo switch', 4000000, 2);
+
+INSERT INTO Barang (id_barang, nama_barang, harga, id_kategori)
+VALUES (6, 'Ular tangga', 50000, 3);
+
+UPDATE Barang SET harga = 7500000 WHERE id_barang = 2;

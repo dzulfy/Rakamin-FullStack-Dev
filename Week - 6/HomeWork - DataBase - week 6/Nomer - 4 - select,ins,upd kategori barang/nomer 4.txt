@@ -1,0 +1,17 @@
+-- query untuk melakukan select, insert, update kategori barang
+SELECT * FROM KategoriBarang
+
+INSERT INTO KategoriBarang (id_kategori, nama_kategori)
+VALUES (1, 'puzzle game');
+
+INSERT INTO KategoriBarang (id_kategori, nama_kategori)
+VALUES (2, 'console game');
+
+INSERT INTO KategoriBarang (id_kategori, nama_kategori)
+VALUES (3, 'board game');
+
+UPDATE kategoriBarang SET nama_kategori = 'puzzle' WHERE id_kategori = 1;
+
+UPDATE kategoriBarang SET nama_kategori = 'console' WHERE id_kategori = 2;
+
+UPDATE kategoriBarang SET nama_kategori = 'board' WHERE id_kategori = 3;
